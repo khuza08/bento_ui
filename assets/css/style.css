@@ -10,16 +10,23 @@ body {
 }
 .container {
     width: 90%;
+    padding: 48px;
     max-width: 1200px;
     margin: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
+    align-items: flex-start;
 }
 .bento {
     background: #222;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
+    flex-grow: 1;
+    flex: 1 1 auto;
+    min-width: 250px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +37,14 @@ body {
 .bento:hover {
     transform: scale(1.05);
 }
+
+.bento .nama {
+    height: 100%;
+    width: 256px;
+}
+
 img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
 }
