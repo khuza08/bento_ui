@@ -35,10 +35,11 @@ body {
 }
 .bento .nama:hover {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 0.75rem rgba(255, 0, 51, 0.295));
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.329));
 }
 
 .bento .nama {
+    border-radius: 0px;
     height: 100%;
     width: 256px;
     transition: all 0.3s;
