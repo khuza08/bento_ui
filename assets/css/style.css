@@ -32,15 +32,16 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s;
 }
-.bento:hover {
+.bento .nama:hover {
     transform: scale(1.05);
+    filter: drop-shadow(0 0 0.75rem rgba(255, 0, 51, 0.295));
 }
 
 .bento .nama {
     height: 100%;
     width: 256px;
+    transition: all 0.3s;
 }
 
 img {
