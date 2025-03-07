@@ -26,3 +26,11 @@ body {
     align-items: center;
     text-align: center;
     transition: transform 0.3s;
+}
+.bento:hover {
+    transform: scale(1.05);
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+}
