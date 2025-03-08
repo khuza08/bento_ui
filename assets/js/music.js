@@ -23,6 +23,11 @@ const songs = [
         src: 'assets/src/music/3.mp3',
         title: 'SAVIOR',
         artist: 'Novulent'
+    },
+    {
+        src: 'assets/src/music/4.mp3',
+        title: 'YOUR FACE',
+        artist: 'Wisp'
     }
 ];
 
