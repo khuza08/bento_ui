@@ -19,3 +19,5 @@ image.addEventListener('mouseenter', () => {
 image.addEventListener('mouseleave', () => {
   changeImage('assets/src/images/locb4.png');  // Kembali ke gambar pertama saat hover hilang
 });
+
+

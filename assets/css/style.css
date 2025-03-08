@@ -6,10 +6,11 @@
     box-sizing: border-box;
     filter: grayscale(100%);
     transition: all 0.5s;
+
 }
 
 body {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,6 +96,23 @@ body {
     padding: 10px;
     border-radius: 2em;
     object-fit: cover;
+    animation: moveUp 1s;
+
+}
+
+.row3 img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 0;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 1s ease; /* Animasi opacity saat hover */
+    animation: moveUp 1s;
+}
+
+.row3 img:hover {
+    opacity: 1;  /* Menjadi terlihat */
 }
 
 .row2 p{
@@ -183,3 +201,4 @@ body {
     border-radius: 2em;
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
+ 
