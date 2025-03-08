@@ -30,7 +30,7 @@
   font-size: 1rem;
 }
 
-/* Gabungkan kontainer controls dan progress */
+/* kontener controls dan progress */
 .audio-player .controls-progress-container {
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
   padding-left: 26px;
 }
 
-/* Kontainer untuk controls */
+/* kontener untuk controls */
 .audio-player .controls {
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@
   gap: 24px;
 }
 
-/* Gaya untuk tombol kontrol */
+/* style tombol kontrol */
 .audio-player .controls button {
   color: white;
   background: none;
@@ -58,7 +58,7 @@
   font-size: 1.25rem;
 }
 
-/* Kontainer untuk progress */
+/* kontener  progress */
 .audio-player .progress-container {
   font-family: monospace;
   padding: auto;

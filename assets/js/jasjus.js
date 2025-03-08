@@ -1,37 +1,21 @@
-const image = document.getElementById('image');
+const image = document.getElementById("image");
 
-// Fungsi untuk mengganti gambar dengan efek fade
+// fade fx
 function changeImage(newSrc) {
-  image.classList.add('fade'); // Menambahkan kelas fade untuk memulai efek fade-out
+  image.classList.add("fade");
 
   setTimeout(() => {
-    image.src = newSrc;  // Ganti gambar
-    image.classList.remove('fade');  // Hapus kelas fade setelah gambar diganti
-  }, 500);  // Durasi fade-out (sesuai dengan durasi transisi di CSS)
+    image.src = newSrc; // ganti gambar
+    image.classList.remove("fade");
+  }, 500); // fadeout dur
 }
 
-// Saat hover, gambar akan memudar dan diganti
-image.addEventListener('mouseenter', () => {
-  changeImage('assets/src/images/location.jpg');  // Ganti dengan gambar kedua saat hover
+// fade fx
+image.addEventListener("mouseenter", () => {
+  changeImage("assets/src/images/location.jpg"); // gambar 2
 });
 
-// Saat hover hilang, gambar akan memudar dan diganti kembali
-image.addEventListener('mouseleave', () => {
-  changeImage('assets/src/images/locb4.png');  // Kembali ke gambar pertama saat hover hilang
+// fade fx
+image.addEventListener("mouseleave", () => {
+  changeImage("assets/src/images/locb4.png"); // gambar 1
 });
-
-const gitgraph = GitgraphJS.createGitgraph(document.getElementById("gitGraph"));
-        
-// Contoh commit history
-const master = gitgraph.branch("main");
-master.commit("First commit");
-master.commit("Added new feature");
-master.commit("Fixed bug");
-master.commit("Optimized performance");
-
-const dev = gitgraph.branch("dev");
-dev.commit("Experimental feature");
-dev.commit("Bug fixes");
-
-master.merge(dev);
-master.commit("Deployment");
