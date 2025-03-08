@@ -1,3 +1,5 @@
+document.getElementById("songTitle").setAttribute("title", document.getElementById("songTitle").innerText);
+
 const audio = document.getElementById('audio');
 const playPauseButton = document.getElementById('playPause');
 const progress = document.getElementById('progress');
@@ -16,6 +18,11 @@ const songs = [
         src: 'assets/src/music/2.mp3',
         title: 'JANGAN SALAH PASANGAN',
         artist: 'KHZX'
+    },
+    {
+        src: 'assets/src/music/3.mp3',
+        title: 'SAVIOR',
+        artist: 'Novulent'
     }
 ];
 
@@ -25,6 +32,9 @@ function loadSong(song) {
     audio.src = song.src;
     songTitle.textContent = song.title;
     artistName.textContent = song.artist;
+
+    // Set volume here (misalnya ke 50%)
+    audio.volume = 0.3;  // Volume diatur ke 50%
 }
 
 playPauseButton.addEventListener('click', () => {

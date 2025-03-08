@@ -101,6 +101,51 @@ body {
     object-fit: cover;
 }
 
+.row2 p{
+    position: absolute;
+    backdrop-filter: blur(3px);
+    bottom: 1rem;  /* Set to 4 in Tailwind, which is 1rem */
+    left: 1rem;    /* Set to 4 in Tailwind, which is 1rem */
+    background: linear-gradient(145deg,  rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    border-radius: 9999px;  /* rounded-full */
+    padding-left: 1rem;     /* px-4 */
+    padding-right: 1rem;    /* px-4 */
+    padding-top: 0.5rem;    /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    box-shadow: 0  0px 8px  rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#image {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #image.fade {
+    opacity: 0;
+  }
+  
+
+.location-box {
+    position: absolute;
+    backdrop-filter: blur(3px);
+    bottom: 1rem;  /* Set to 4 in Tailwind, which is 1rem */
+    left: 1rem;    /* Set to 4 in Tailwind, which is 1rem */
+    background: linear-gradient(145deg,  rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    border-radius: 9999px;  /* rounded-full */
+    padding-left: 1rem;     /* px-4 */
+    padding-right: 1rem;    /* px-4 */
+    padding-top: 0.5rem;    /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    box-shadow: 0  0px 8px  rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.location-text {
+    font-size: 1.125rem;  /* text-lg */
+    font-weight: 600;     /* font-semibold */
+}
+
+
 /* Bento Backgrounds */
 
 .row1 {    
