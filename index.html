@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/music.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        
+
         <!-- Kolom Kiri -->
         <div class="col-left">
             <div class="row row1">
                 <h1><i>Huzaifah Asif Putra Imansyah</i></h1>
                 <p>
-                    Saya suka belajar Web Developer, Micro-controller, Linux kernel, 
+                    Saya suka belajar Web Developer, Micro-controller, Linux kernel,
                     Desain grafis, Cybersecurity, dan Mesin sepeda motor.
                 </p>
                 <p>
-                    Saya senang mempelajari hal-hal baru karena dengan begitu, saya bisa terus berkembang, 
+                    Saya senang mempelajari hal-hal baru karena dengan begitu, saya bisa terus berkembang,
                     menemukan solusi kreatif, dan menghadapi tantangan dengan cara yang lebih efektif.
                 </p>
             </div>
@@ -30,7 +34,7 @@
                     <p>
                         Sidoarjo, Indonesia
                     </p>
-            
+
             </div>
 
             <div class="row row3">
@@ -39,13 +43,13 @@
                 </div>
 
                 <div class="row-col right">
-                    
+
                     <div class="audio-player">
                         <div class="text-center">
                           <h2 id="songTitle">Song Title</h2>
                           <p id="artistName">Artist Name</p>
                         </div>
-                      
+
                         <!-- Kontainer Gabungan untuk Controls dan Progress -->
                         <div class="controls-progress-container">
                           <!-- Kontainer Controls -->
@@ -60,7 +64,7 @@
                               <i class="fas fa-forward"></i>
                             </button>
                           </div>
-                      
+
                           <!-- Kontainer Progress -->
                           <div class="progress-container">
                             <span id="currentTime">00:00</span>
@@ -70,10 +74,10 @@
                             <span id="duration">00:00</span>
                           </div>
                         </div>
-                      
+
                         <audio id="audio"></audio>
                       </div>
-                      
+
 
                 </div>
             </div>
@@ -81,11 +85,38 @@
 
         <!-- Kolom Kanan -->
         <div class="col-right">
-            <div class="row top">
-                <!-- Tambahkan konten jika diperlukan -->
+            <div class="socialbox">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://github.com/yourusername" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/yourusername" aria-label="Twitter">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                </ul></div>
+            <div class="row top">   
+                
+                <h2>GitHub Contribution History</h2>
+                <canvas id="gitGraph"></canvas>
+
             </div>
+           
             <div class="row bottom">
-                <!-- Tambahkan konten jika diperlukan -->
+                <p class="quote">Even patience has its limits, don’t regret it when they finally give up. <br><br><br><br>- <i>huza</i></p>
             </div>
         </div>
     </div>

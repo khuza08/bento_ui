@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-     opacity: 0.5; 
+        opacity: 0.5; 
 }
 
 
@@ -57,6 +57,7 @@ body {
 
 .row {
     flex: 1;
+   
     border-radius: 2em;
     overflow: hidden;
 }
@@ -64,11 +65,14 @@ body {
 .row3 {
     display: flex;
     gap: 1em;
+ 
 }
 
 .row-col {
     flex: 1;
+   
     border-radius: 2em;
+ 
     backdrop-filter: blur(2em);
 }
 
@@ -80,7 +84,7 @@ body {
 
 .row1 h1 {
     font-weight: 900;
-    padding-top: 24px; 
+    padding-top: 24px;
 }
 
 .row1 p {
@@ -112,6 +116,7 @@ body {
 
 .row2 p {
     position: absolute;
+    color: whitesmoke;
     backdrop-filter: blur(3px);
     bottom: 1rem;
     left: 1rem;
@@ -132,15 +137,111 @@ body {
 }
 
 
-
 .row1, .row2, .left, .right, .top, .bottom {
-
+  
     background-color: rgba(0, 0, 0, 0.5); 
 
 
-    background: linear-gradient(145deg,  rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.247);
+    background: linear-gradient(145deg,  rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
     border-radius: 2em;
     border: 1px solid rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(1em); 
+}
+
+.socialbox {
+    background-color: rgba(0, 0, 0, 0.5); 
+
+
+    background: linear-gradient(145deg,  rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1em); 
+}
+
+
+.col-right .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quote {
+    font-family: monospace; 
+    font-size: 1.3rem;
+    text-align: left;
+    position: relative;
+    color: white;
+    padding: 0 20px; 
+}
+
+.quote::before,
+.quote::after {
+    content: ''; 
+    font-size: 2rem;
+    color: #ddd; 
+    position: absolute;
+}
+
+.quote::before {
+    top: -0.5rem;
+    left: 0;
+}
+
+.quote::after {
+    bottom: -0.5rem;
+    right: 0;
+}
+/* ---  Social Links Styles --- */
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%;
+}
+
+.social-links a {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease; 
+}
+
+.social-links a:hover {
+    transform: translateY(-3px); 
+}
+
+.social-links i {
+    font-size: 1.5rem; 
+}
+
+/* ---  Media Query for Smaller Screens --- */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+		  width: 95%;
+		  height: auto;
+    }
+	 .col-left, .col-right{
+		width: 100%;
+	 }
+    .social-links {
+        flex-direction: row; 
+    }
+	 .row {
+		flex: none; 
+	 }
 }

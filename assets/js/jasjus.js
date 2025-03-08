@@ -20,4 +20,18 @@ image.addEventListener('mouseleave', () => {
   changeImage('assets/src/images/locb4.png');  // Kembali ke gambar pertama saat hover hilang
 });
 
+const gitgraph = GitgraphJS.createGitgraph(document.getElementById("gitGraph"));
+        
+// Contoh commit history
+const master = gitgraph.branch("main");
+master.commit("First commit");
+master.commit("Added new feature");
+master.commit("Fixed bug");
+master.commit("Optimized performance");
 
+const dev = gitgraph.branch("dev");
+dev.commit("Experimental feature");
+dev.commit("Bug fixes");
+
+master.merge(dev);
+master.commit("Deployment");
