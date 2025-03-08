@@ -1,0 +1,58 @@
+.audio-player {
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 32px;
+}
+
+.audio-player #songTitle {
+  color: white;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.audio-player #artistName {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.audio-player .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 4px;
+}
+
+.audio-player .controls button {
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.audio-player .progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #9ca3af;
+  font-size: 0.75rem;
+}
+
+.audio-player .progress-bar {
+  flex: 1;
+  margin: 0 8px;
+  height: 4px;
+  background-color: #4b5563;
+  border-radius: 9999px;
+  position: relative;
+}
+
+.audio-player #progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: white;
+  border-radius: 9999px;
+  width: 0%;
+}
