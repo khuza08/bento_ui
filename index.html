@@ -1,171 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bento Grid</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/music.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/music.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
     <div class="container">
-
-        <!-- Kolom Kiri -->
-        <div class="col-left">
-            <div class="row row1">
-                <h1><i>Huzaifah Asif Putra Imansyah</i></h1>
-                <p>
-                    Saya suka belajar Web Developer, Micro-controller, Linux kernel,
-                    Desain grafis, Cybersecurity, dan Mesin sepeda motor.
-                </p>
-                <p>
-                    Saya senang mempelajari hal-hal baru karena dengan begitu, saya bisa terus berkembang,
-                    menemukan solusi kreatif, dan menghadapi tantangan dengan cara yang lebih efektif.
-                </p>
-            </div>
-
-            <div class="row row2">
-                <img id="image" src="assets/src/images/locb4.png" alt="Sidoarjo" width="300" height="200" />
-                    <p>
-                        Sidoarjo, Indonesia
-                    </p>
-
-            </div>
-
-            <div class="row row3">
-                <div class="row-col left">
-                    <a href="https://bento.me/huzaa"><img src="assets/src/images/bento.png" alt=""></a>
-                    
-                </div>
-
-                <div class="row-col right">
-
-                    <div class="audio-player">
-                        <div class="text-center">
-                          <h2 id="songTitle">Song Title</h2>
-                          <p id="artistName">Artist Name</p>
-                        </div>
-
-                        <!-- Kontainer Gabungan untuk Controls dan Progress -->
-                        <div class="controls-progress-container">
-                          <!-- Kontainer Controls -->
-                          <div class="controls">
-                            <button id="backward">
-                              <i class="fas fa-backward"></i>
-                            </button>
-                            <button id="playPause">
-                              <i class="fas fa-play"></i>
-                            </button>
-                            <button id="forward">
-                              <i class="fas fa-forward"></i>
-                            </button>
-                          </div>
-
-                          <!-- Kontainer Progress -->
-                          <div class="progress-container">
-                            <span id="currentTime">00:00</span>
-                            <div class="progress-bar">
-                              <div id="progress"></div>
-                            </div>
-                            <span id="duration">00:00</span>
-                          </div>
-                        </div>
-
-                        <audio id="audio"></audio>
-                      </div>
-
-
-                </div>
-            </div>
+      <!-- Kolom Kiri -->
+      <div class="col-left">
+        <div class="row row1">
+          <h1><i>Huzaifah Asif Putra Imansyah</i></h1>
+          <p>
+            Saya suka belajar Web Developer, Micro-controller, Linux kernel,
+            Desain grafis, Cybersecurity, dan Mesin sepeda motor.
+          </p>
+          <p>
+            Saya senang mempelajari hal-hal baru karena dengan begitu, saya bisa
+            terus berkembang, menemukan solusi kreatif, dan menghadapi tantangan
+            dengan cara yang lebih efektif.
+          </p>
         </div>
 
-        <!-- Kolom Kanan -->
-        <div class="col-right">
-            <div class="socialbox">
-                <ul class="social-links">
-                    <li>
-                        <a href="https://github.com/khuza08" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/huzawastaken" aria-label="Twitter">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/huzawastaken" aria-label="LinkedIn">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://discordapp.com/users/535072582936952842" aria-label="LinkedIn">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </li>
-                </ul></div>
-                <div class="row top">   
-                    <div class="skillset-container">
-                        <h3 class="skill-title">Featured Skill</h3>
-                        <ul class="skillset">
-                            <li>
-                                <a  aria-label="html">
-                                    <i class="fa-brands fa-html5"><p>50%</p></i>
-                                    
-                                </a>
-                            </li>
-                            <li>
-                                <a  aria-label="css">
-                                    <i class="fa-brands fa-css3-alt"><p>40%</p>  </i>
-                                                              
-                                </a>
-                            </li>
-                            <li>
-                                <a  aria-label="js">
-                                    <i class="fa-brands fa-square-js"><p>20%</p></i>
-                                                                
-                                </a>
-                            </li>
-                            <li>
-                                <a  aria-label="python">
-                                    <i class="fa-brands fa-python"><p>20%</p></i>                            
-                                </a>
-                            </li>
-                            <li>
-                                <a  aria-label="python">
-                                    <i class="fa-brands fa-wordpress"><p>20%</p></i>                            
-                                </a>
-                            </li>
-                            <li>
-                                <a ><i class="fa-brands fa-linux"><p>88%</p></i></a>
-                            </li>
-                            <li><a ><i class="fa-brands fa-android"><p>45%</p></i></a></li>
-                            <li><a ><i class="fa-brands fa-java"><p>12%</p></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-            <div class="row bottom">
-                <p class="quote">Even patience has its limits, don’t regret it when they finally give up. <br><br><br><br>- <i>huza</i></p>
-            </div>
+        <div class="row row2">
+          <img
+            id="image"
+            src="assets/src/images/locb4.png"
+            alt="Sidoarjo"
+            width="300"
+            height="200" />
+          <p>Sidoarjo, Indonesia</p>
         </div>
+
+        <div class="row row3">
+          <div class="row-col left">
+            <a href="https://bento.me/huzaa"
+              ><img src="assets/src/images/bento.png" alt=""
+            /></a>
+          </div>
+
+          <div class="row-col right">
+            <div class="audio-player">
+              <div class="text-center">
+                <h2 id="songTitle">Song Title</h2>
+                <p id="artistName">Artist Name</p>
+              </div>
+
+              <!-- Kontainer Gabungan untuk Controls dan Progress -->
+              <div class="controls-progress-container">
+                <!-- Kontainer Controls -->
+                <div class="controls">
+                  <button id="backward">
+                    <i class="fas fa-backward"></i>
+                  </button>
+                  <button id="playPause">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button id="forward">
+                    <i class="fas fa-forward"></i>
+                  </button>
+                </div>
+
+                <!-- Kontainer Progress -->
+                <div class="progress-container">
+                  <span id="currentTime">00:00</span>
+                  <div class="progress-bar">
+                    <div id="progress"></div>
+                  </div>
+                  <span id="duration">00:00</span>
+                </div>
+              </div>
+
+              <audio id="audio"></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan -->
+      <div class="col-right">
+        <div class="socialbox">
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/khuza08" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/huzawastaken" aria-label="Twitter">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/huzawastaken"
+                aria-label="LinkedIn">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://discordapp.com/users/535072582936952842"
+                aria-label="LinkedIn">
+                <i class="fab fa-discord"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row top">
+          <div class="skillset-container">
+            <h3 class="skill-title">Featured Skill</h3>
+            <ul class="skillset">
+              <li>
+                <a aria-label="html">
+                  <i class="fa-brands fa-html5"><p>50%</p></i>
+                </a>
+              </li>
+              <li>
+                <a aria-label="css">
+                  <i class="fa-brands fa-css3-alt"><p>40%</p> </i>
+                </a>
+              </li>
+              <li>
+                <a aria-label="js">
+                  <i class="fa-brands fa-square-js"><p>20%</p></i>
+                </a>
+              </li>
+              <li>
+                <a aria-label="python">
+                  <i class="fa-brands fa-python"><p>20%</p></i>
+                </a>
+              </li>
+              <li>
+                <a aria-label="python">
+                  <i class="fa-brands fa-wordpress"><p>20%</p></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  ><i class="fa-brands fa-linux"><p>88%</p></i></a
+                >
+              </li>
+              <li>
+                <a
+                  ><i class="fa-brands fa-android"><p>45%</p></i></a
+                >
+              </li>
+              <li>
+                <a
+                  ><i class="fa-brands fa-java"><p>12%</p></i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row bottom">
+          <p class="quote">
+            Even patience has its limits, don’t regret it when they finally give
+            up. <br /><br /><br /><br />- <i>huza</i>
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Background Video -->
     <div class="video-wrapper">
-        <video autoplay muted loop class="bg-video">
-            <source src="assets/src/videos/2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+      <video autoplay muted loop class="bg-video">
+        <source src="assets/src/videos/2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <script src="assets/js/music.js"></script>
     <script src="assets/js/jasjus.js"></script>
-</body>
+  </body>
 </html>
