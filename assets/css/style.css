@@ -228,19 +228,19 @@ body {
 
 .skillset-container {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: auto;
 }
 
 .skill-title {
+    font-family: Montserrat;
     font-size: 1.5rem;
     color: whitesmoke;
-    margin-bottom: 10px;
-    font-weight: bold;
+    margin-top: auto;
 }
 
 .skillset {
     list-style: none;
-    padding: 0;
+    padding-top: 24px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -248,7 +248,25 @@ body {
     gap: 20px;
     width: 100%;
 }
+.skillset i {
+    padding: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.8rem;
+    background-color: rgba(78, 78, 78, 0.281); 
+    border-radius: 12px;
+}
 
+.skillset p {
+    font-family: monospace;
+    font-size: small;
+    padding-top: 8px;
+    color: rgba(255, 255, 255, 0.322);
+}
+
+.skillset i:hover p {
+    color: rgb(255, 255, 255);
+}
 
 /* ---  Media Query for Smaller Screens --- */
 
