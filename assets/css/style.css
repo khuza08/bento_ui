@@ -99,7 +99,6 @@ body {
 
 .row2 img {
     padding: 10px;
-    animation: moveUp 1s;
 }
 
 .row3 img {
@@ -151,8 +150,6 @@ body {
 
 .socialbox {
     background-color: rgba(0, 0, 0, 0.5); 
-
-
     background: linear-gradient(145deg,  rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.5));
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
     border-radius: 1em;
@@ -227,6 +224,32 @@ body {
     font-size: 1.5rem; 
 }
 
+/* --- Skillset sigma--- */
+
+.skillset-container {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.skill-title {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skillset {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
 /* ---  Media Query for Smaller Screens --- */
 
 @media (max-width: 768px) {
@@ -245,3 +268,4 @@ body {
 		flex: none; 
 	 }
 }
+

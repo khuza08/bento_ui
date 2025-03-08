@@ -15,6 +15,11 @@ const songs = [
         artist: 'KHZX'
     },
     {
+        src: 'assets/src/music/5.mp3',
+        title: 'LAGUKU DUBSTEP',
+        artist: 'IMAM SIDIK'
+    },
+    {
         src: 'assets/src/music/2.mp3',
         title: 'JANGAN SALAH PASANGAN',
         artist: 'KHZX'
