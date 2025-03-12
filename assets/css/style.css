@@ -187,6 +187,7 @@ body {
   position: relative;
   color: white;
   padding: 0 20px;
+  clear: both;
 }
 
 .quote::before,
@@ -292,6 +293,7 @@ body {
 }
 .gallery-container {
   margin-top: 2em;
+  margin-bottom: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,6 +326,27 @@ body {
   transform: scale(1.1);
 }
 
+.stickyfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 24px;
+  width: 100%;
+  padding-top: 4px;
+  text-align: center;
+  justify-content: center;
+  font-family: monospace;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(0, 0, 0, 0.5)
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1em);
+  clear: both;
+}
 
 /* --- media query --- */
 
