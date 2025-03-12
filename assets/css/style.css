@@ -8,8 +8,9 @@
 }
 
 body {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: black;
@@ -147,7 +148,6 @@ body {
 .top,
 .bottom {
   background-color: rgba(0, 0, 0, 0.5);
-
   background: linear-gradient(
     145deg,
     rgba(255, 255, 255, 0.15),
@@ -206,7 +206,7 @@ body {
   bottom: -0.5rem;
   right: 0;
 }
-/* ---  Social Links Styles --- */
+/* --- social links style --- */
 
 .social-links {
   list-style: none;
@@ -238,7 +238,7 @@ body {
   font-size: 1.5rem;
 }
 
-/* --- Skillset sigma--- */
+/* --- skill sigma--- */
 
 .skillset-container {
   text-align: center;
@@ -282,7 +282,50 @@ body {
   color: rgb(255, 255, 255);
 }
 
-/* ---  Media Query for Smaller Screens --- */
+/* gallery */
+
+
+.gallery-title{
+  color: whitesmoke;
+  font-family: Montserrat;
+  margin-top: 64px;
+}
+.gallery-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-row {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  overflow-x: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(0, 0, 0, 0.5)
+  );
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1em);
+}
+.gallery-row img {
+  width: 250px;
+  height: 150px;
+  border-radius: 1.5em;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.gallery-row img:hover {
+  transform: scale(1.1);
+}
+
+
+/* --- media query --- */
 
 @media (max-width: 768px) {
   .container {
